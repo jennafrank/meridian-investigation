@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <defs>
+    <linearGradient id="md-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#0f1319"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="md-scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#A855F7" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="55%" stop-color="#A855F7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="md-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <clipPath id="md-clip">
+      <rect width="800" height="120" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#md-clip)">
+    <!-- Background -->
+    <rect width="800" height="120" fill="url(#md-bg)"/>
+
+    <!-- Matrix rain columns - falling characters -->
+    <g opacity="0.06" font-family="'Courier New', monospace" font-size="7" fill="#A855F7">
+      <!-- Column 1 -->
+      <text x="15" y="0"><animate attributeName="y" values="-10;130" dur="4s" repeatCount="indefinite"/>0</text>
+      <text x="15" y="0"><animate attributeName="y" values="-40;100" dur="4s" repeatCount="indefinite"/>1</text>
+      <text x="15" y="0"><animate attributeName="y" values="-70;70" dur="4s" repeatCount="indefinite"/>0</text>
+      <!-- Column 2 -->
+      <text x="55" y="0"><animate attributeName="y" values="-20;110" dur="5.5s" repeatCount="indefinite"/>1</text>
+      <text x="55" y="0"><animate attributeName="y" values="-50;80" dur="5.5s" repeatCount="indefinite"/>0</text>
+      <text x="55" y="0"><animate attributeName="y" values="-80;50" dur="5.5s" repeatCount="indefinite"/>1</text>
+      <!-- Column 3 -->
+      <text x="95" y="0"><animate attributeName="y" values="-5;125" dur="3.8s" repeatCount="indefinite"/>1</text>
+      <text x="95" y="0"><animate attributeName="y" values="-35;95" dur="3.8s" repeatCount="indefinite"/>0</text>
+      <text x="95" y="0"><animate attributeName="y" values="-65;65" dur="3.8s" repeatCount="indefinite"/>1</text>
+      <!-- Column 4 -->
+      <text x="170" y="0"><animate attributeName="y" values="-15;115" dur="6s" repeatCount="indefinite"/>0</text>
+      <text x="170" y="0"><animate attributeName="y" values="-45;85" dur="6s" repeatCount="indefinite"/>1</text>
+      <!-- Column 5 -->
+      <text x="230" y="0"><animate attributeName="y" values="-8;122" dur="4.5s" repeatCount="indefinite"/>1</text>
+      <text x="230" y="0"><animate attributeName="y" values="-38;92" dur="4.5s" repeatCount="indefinite"/>0</text>
+      <text x="230" y="0"><animate attributeName="y" values="-68;62" dur="4.5s" repeatCount="indefinite"/>1</text>
+      <!-- Column 6 -->
+      <text x="310" y="0"><animate attributeName="y" values="-25;105" dur="5s" repeatCount="indefinite"/>0</text>
+      <text x="310" y="0"><animate attributeName="y" values="-55;75" dur="5s" repeatCount="indefinite"/>1</text>
+      <!-- Column 7 -->
+      <text x="490" y="0"><animate attributeName="y" values="-12;118" dur="4.2s" repeatCount="indefinite"/>1</text>
+      <text x="490" y="0"><animate attributeName="y" values="-42;88" dur="4.2s" repeatCount="indefinite"/>0</text>
+      <text x="490" y="0"><animate attributeName="y" values="-72;58" dur="4.2s" repeatCount="indefinite"/>1</text>
+      <!-- Column 8 -->
+      <text x="560" y="0"><animate attributeName="y" values="-18;112" dur="5.8s" repeatCount="indefinite"/>0</text>
+      <text x="560" y="0"><animate attributeName="y" values="-48;82" dur="5.8s" repeatCount="indefinite"/>1</text>
+      <!-- Column 9 -->
+      <text x="620" y="0"><animate attributeName="y" values="-7;123" dur="3.5s" repeatCount="indefinite"/>1</text>
+      <text x="620" y="0"><animate attributeName="y" values="-37;93" dur="3.5s" repeatCount="indefinite"/>0</text>
+      <text x="620" y="0"><animate attributeName="y" values="-67;63" dur="3.5s" repeatCount="indefinite"/>1</text>
+      <!-- Column 10 -->
+      <text x="710" y="0"><animate attributeName="y" values="-22;108" dur="4.8s" repeatCount="indefinite"/>0</text>
+      <text x="710" y="0"><animate attributeName="y" values="-52;78" dur="4.8s" repeatCount="indefinite"/>1</text>
+      <text x="710" y="0"><animate attributeName="y" values="-82;48" dur="4.8s" repeatCount="indefinite"/>0</text>
+      <!-- Column 11 -->
+      <text x="760" y="0"><animate attributeName="y" values="-30;100" dur="5.2s" repeatCount="indefinite"/>1</text>
+      <text x="760" y="0"><animate attributeName="y" values="-60;70" dur="5.2s" repeatCount="indefinite"/>0</text>
+      <!-- Column 12 -->
+      <text x="130" y="0"><animate attributeName="y" values="-3;127" dur="6.5s" repeatCount="indefinite"/>0</text>
+      <text x="130" y="0"><animate attributeName="y" values="-33;97" dur="6.5s" repeatCount="indefinite"/>1</text>
+      <!-- Column 13 -->
+      <text x="430" y="0"><animate attributeName="y" values="-28;102" dur="4.3s" repeatCount="indefinite"/>1</text>
+      <text x="430" y="0"><animate attributeName="y" values="-58;72" dur="4.3s" repeatCount="indefinite"/>0</text>
+    </g>
+
+    <!-- Tron-style horizontal grid lines -->
+    <g opacity="0.04" stroke="#A855F7" stroke-width="0.5">
+      <line x1="0" y1="30" x2="800" y2="30"/>
+      <line x1="0" y1="60" x2="800" y2="60"/>
+      <line x1="0" y1="90" x2="800" y2="90"/>
+    </g>
+
+    <!-- Horizontal scan sweep -->
+    <rect x="-800" y="0" width="800" height="120" fill="url(#md-scan)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;1600,0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Tron light trail - top -->
+    <line x1="0" y1="1" x2="40" y2="1" stroke="#A855F7" stroke-width="1" stroke-opacity="0.5">
+      <animate attributeName="x1" values="-40;800" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;840" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0;0.5;0.5;0" dur="4s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Tron light trail - bottom -->
+    <line x1="0" y1="119" x2="40" y2="119" stroke="#C084FC" stroke-width="1" stroke-opacity="0.3">
+      <animate attributeName="x1" values="840;-40" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="800;-80" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0;0.3;0.3;0" dur="5s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Border with pulse -->
+    <rect x="1" y="1" width="798" height="118" rx="4" fill="none" stroke="#A855F7" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Left side - web attack chain visualization -->
+    <g opacity="0.35">
+      <!-- Browser/request icon -->
+      <rect x="30" y="22" width="18" height="14" rx="2" fill="none" stroke="#A855F7" stroke-width="0.8"/>
+      <line x1="30" y1="28" x2="48" y2="28" stroke="#A855F7" stroke-width="0.5" stroke-opacity="0.5"/>
+      <circle cx="33" cy="25" r="1" fill="#A855F7"/>
+      <circle cx="37" cy="25" r="1" fill="#A855F7"/>
+
+      <!-- Arrow down to server -->
+      <line x1="39" y1="36" x2="39" y2="44" stroke="#A855F7" stroke-width="0.5" stroke-opacity="0.5"/>
+      <polygon points="39,46 37,42 41,42" fill="#A855F7" opacity="0.5"/>
+
+      <!-- Server box -->
+      <rect x="28" y="47" width="22" height="12" rx="1" fill="none" stroke="#C084FC" stroke-width="0.8"/>
+      <line x1="31" y1="52" x2="35" y2="52" stroke="#C084FC" stroke-width="0.5"/>
+      <line x1="31" y1="55" x2="47" y2="55" stroke="#C084FC" stroke-width="0.5" stroke-opacity="0.3"/>
+
+      <!-- Arrow to shell -->
+      <line x1="50" y1="53" x2="62" y2="53" stroke="#C084FC" stroke-width="0.5" stroke-opacity="0.5"/>
+      <polygon points="64,53 60,51 60,55" fill="#C084FC" opacity="0.5"/>
+
+      <!-- Terminal/shell -->
+      <rect x="65" y="45" width="20" height="16" rx="2" fill="none" stroke="#FF1493" stroke-width="0.8"/>
+      <text x="68" y="56" font-family="'Courier New', monospace" font-size="6" fill="#FF1493" opacity="0.8">$_</text>
+
+      <!-- Arrow to lock/privesc -->
+      <line x1="85" y1="53" x2="97" y2="53" stroke="#FF1493" stroke-width="0.5" stroke-opacity="0.5"/>
+      <polygon points="99,53 95,51 95,55" fill="#FF1493" opacity="0.5"/>
+
+      <!-- Root lock icon -->
+      <rect x="100" y="49" width="12" height="10" rx="1" fill="none" stroke="#E3B341" stroke-width="0.8"/>
+      <path d="M 103 49 L 103 45 Q 103 42 106 42 Q 109 42 109 45 L 109 49" fill="none" stroke="#E3B341" stroke-width="0.8"/>
+      <circle cx="106" cy="54" r="1.5" fill="#E3B341"/>
+
+      <!-- Arrow to C2 -->
+      <line x1="112" y1="53" x2="124" y2="53" stroke="#E3B341" stroke-width="0.5" stroke-opacity="0.5"/>
+      <polygon points="126,53 122,51 122,55" fill="#E3B341" opacity="0.5"/>
+
+      <!-- C2 beacon pulses - animated -->
+      <circle cx="140" cy="53" r="2" fill="#FF6B6B"/>
+      <circle cx="140" cy="53" r="4" fill="none" stroke="#FF6B6B" stroke-width="0.8">
+        <animate attributeName="r" values="4;14" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="140" cy="53" r="4" fill="none" stroke="#FF6B6B" stroke-width="0.5">
+        <animate attributeName="r" values="4;14" dur="2s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="opacity" values="0.4;0" dur="2s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+
+      <!-- Labels under chain -->
+      <text x="39" y="74" font-family="'Courier New', monospace" font-size="5" fill="#A855F7" text-anchor="middle">recon</text>
+      <text x="75" y="74" font-family="'Courier New', monospace" font-size="5" fill="#FF1493" text-anchor="middle">LFI→SSH</text>
+      <text x="106" y="74" font-family="'Courier New', monospace" font-size="5" fill="#E3B341" text-anchor="middle">root</text>
+      <text x="140" y="74" font-family="'Courier New', monospace" font-size="5" fill="#FF6B6B" text-anchor="middle">C2</text>
+    </g>
+
+    <!-- Blocked indicator with blink -->
+    <g opacity="0.2">
+      <line x1="30" y1="87" x2="155" y2="87" stroke="#A855F7" stroke-width="0.3"/>
+      <text x="92" y="96" font-family="'Courier New', monospace" font-size="5" fill="#A855F7" text-anchor="middle">73 BLOCKED</text>
+      <circle cx="160" cy="93" r="2" fill="#FF6B6B">
+        <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Data packet dots racing along bottom edge -->
+    <circle r="1" fill="#A855F7">
+      <animate attributeName="cx" values="0;800" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="115;115" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="0.8" fill="#C084FC">
+      <animate attributeName="cx" values="0;800" dur="4.5s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="cy" values="113;113" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.3;0.3;0" dur="4.5s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle r="0.8" fill="#A855F7">
+      <animate attributeName="cx" values="800;0" dur="3.8s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="cy" values="117;117" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.25;0.25;0" dur="3.8s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+
+    <!-- Project title with subtle pulse -->
+    <text x="400" y="40" font-family="'Courier New', monospace" font-size="16" fill="#A855F7" text-anchor="middle" font-weight="bold" letter-spacing="3" filter="url(#md-glow)">MERIDIAN
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="400" y="60" font-family="'Courier New', monospace" font-size="11" fill="#e6edf3" text-anchor="middle" opacity="0.7">Web App Intrusion  ·  Patient Portal  ·  Threat Hunt</text>
+
+    <!-- Stats -->
+    <text x="400" y="80" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3" text-anchor="middle" opacity="0.4">12 findings  ·  11 KQL detections  ·  23-row kill chain  ·  73 C2 blocks</text>
+
+    <!-- Blinking cursor after stats -->
+    <rect x="588" y="72" width="1" height="9" fill="#A855F7">
+      <animate attributeName="opacity" values="0;0.6;0" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Right side - kill chain steps with sequential fade-in -->
+    <g opacity="0.3">
+      <text x="650" y="30" font-family="'Courier New', monospace" font-size="7" fill="#A855F7">nmap →
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="0s"/>
+      </text>
+      <text x="650" y="42" font-family="'Courier New', monospace" font-size="7" fill="#C084FC">gobuster →
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="1s"/>
+      </text>
+      <text x="650" y="54" font-family="'Courier New', monospace" font-size="7" fill="#FF1493">LFI →
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="2s"/>
+      </text>
+      <text x="650" y="66" font-family="'Courier New', monospace" font-size="7" fill="#E3B341">svc_backup →
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="3s"/>
+      </text>
+      <text x="650" y="78" font-family="'Courier New', monospace" font-size="7" fill="#FF6B6B">rootbash →
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="4s"/>
+      </text>
+      <text x="650" y="90" font-family="'Courier New', monospace" font-size="7" fill="#FF6B6B">C2 × 73
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="5s"/>
+      </text>
+    </g>
+
+    <!-- Score badge -->
+    <text x="720" y="105" font-family="'Courier New', monospace" font-size="9" fill="#A855F7" opacity="0.2">100/100</text>
+  </g>
+</svg>
