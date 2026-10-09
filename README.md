@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="meridian-banner-animated.svg" width="100%" alt="Hunt 25: Meridian — Web App Intrusion"/>
+</p>
+
 # Meridian Investigation
 
 **Hunt 25: Meridian Patient Portal Intrusion** — scored threat hunt, **99/100, 1st place**.
