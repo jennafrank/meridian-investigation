@@ -2,9 +2,14 @@
 
 **Hunt 25: Meridian Patient Portal Intrusion** — scored threat hunt, **99/100, 1st place**.
 
-A hypothesis-driven threat hunt on a single Ubuntu 22.04 host (Apache, PHP, MySQL) running a patient portal, investigated in Microsoft Sentinel with KQL across eight custom log tables. An attacker used a local file inclusion (LFI) flaw in the web application to read a credentials file, logged in over SSH with a stolen service-account password, and escalated to root through a SUID copy of bash, leaving a second SUID-root backdoor disguised as a health check. The hunt separates the real intrusion from the noise of an automated defense stack running on the same host, shows that the stack's 73 "blocked exfil" events were the attacker's own SSH session rather than a C2 channel, and delivers 12 detection rules, 8 telemetry gaps and an IR handover.
+## Key findings
 
-**Full report:** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx) (TLP:CLEAR)
+- **The "exfil" was not C2.** All 73 "blocked exfil" events were the attacker's own SSH session: the IP and port match across three tables, and the gaps between blocks follow TCP retransmission backoff, not a beacon timer.
+- **The defence stack blinded itself.** Its bootstrap sweep removed Sysmon 39 minutes before the attack began, so the whole intrusion ran without process-tree logging.
+- **An uncorroborated export, flagged rather than assumed.** The defence stack recorded a patient data export that no web or database log supports. The report names the discrepancy and treats it as a possible breach until ruled out.
+- **12 detection rules.** All written in KQL, with D6 run and validated against the hunt data.
+
+A hypothesis-driven threat hunt on a single Ubuntu 22.04 host (Apache, PHP, MySQL) running a patient portal, investigated in Microsoft Sentinel with KQL across eight custom log tables. An attacker used a local file inclusion (LFI) flaw in the web application to read a credentials file, logged in over SSH with a stolen service-account password, and escalated to root through a SUID copy of bash, leaving a second SUID-root backdoor disguised as a health check. The hunt separates the real intrusion from the noise of an automated defense stack running on the same host, shows that the stack's 73 "blocked exfil" events were the attacker's own SSH session rather than a C2 channel, and delivers 12 detection rules, 8 telemetry gaps and an IR handover.
 
 ## Attack chain
 
@@ -53,5 +58,9 @@ All 12 are written in KQL in section 14 of the report, each with logic, false-po
 - **ABLE** — hypothesis scoping (Actor, Behaviour, Location, Evidence)
 
 ## What's in the report
+
+**Full report (PDF):** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.pdf](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.pdf) (49 pages, TLP:CLEAR)
+
+**Editable version:** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx)
 
 Executive summary, hypothesis and scope, 14 investigation pivots with queries and screenshots, a dead-ends table, UTC timeline, 12 findings with confidence levels, negative findings, ATT&CK coverage, 8 telemetry gaps, 12 detection rules, IR handover, next-hunt leads, and the full query appendix.
