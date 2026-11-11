@@ -140,11 +140,11 @@
       <path d="M 103 49 L 103 45 Q 103 42 106 42 Q 109 42 109 45 L 109 49" fill="none" stroke="#E3B341" stroke-width="0.8"/>
       <circle cx="106" cy="54" r="1.5" fill="#E3B341"/>
 
-      <!-- Arrow to C2 -->
+      <!-- Arrow to backdoor -->
       <line x1="112" y1="53" x2="124" y2="53" stroke="#E3B341" stroke-width="0.5" stroke-opacity="0.5"/>
       <polygon points="126,53 122,51 122,55" fill="#E3B341" opacity="0.5"/>
 
-      <!-- C2 beacon pulses - animated -->
+      <!-- Backdoor (health_check) pulses - animated -->
       <circle cx="140" cy="53" r="2" fill="#FF6B6B"/>
       <circle cx="140" cy="53" r="4" fill="none" stroke="#FF6B6B" stroke-width="0.8">
         <animate attributeName="r" values="4;14" dur="2s" repeatCount="indefinite"/>
@@ -159,7 +159,7 @@
       <text x="39" y="74" font-family="'Courier New', monospace" font-size="5" fill="#A855F7" text-anchor="middle">recon</text>
       <text x="75" y="74" font-family="'Courier New', monospace" font-size="5" fill="#FF1493" text-anchor="middle">LFI→SSH</text>
       <text x="106" y="74" font-family="'Courier New', monospace" font-size="5" fill="#E3B341" text-anchor="middle">root</text>
-      <text x="140" y="74" font-family="'Courier New', monospace" font-size="5" fill="#FF6B6B" text-anchor="middle">C2</text>
+      <text x="140" y="74" font-family="'Courier New', monospace" font-size="5" fill="#FF6B6B" text-anchor="middle">backdoor</text>
     </g>
 
     <!-- Blocked indicator with blink -->
@@ -197,10 +197,10 @@
     <text x="400" y="60" font-family="'Courier New', monospace" font-size="11" fill="#e6edf3" text-anchor="middle" opacity="0.7">Web App Intrusion  ·  Patient Portal  ·  Threat Hunt</text>
 
     <!-- Stats -->
-    <text x="400" y="80" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3" text-anchor="middle" opacity="0.4">12 findings  ·  11 KQL detections  ·  23-row kill chain  ·  73 C2 blocks</text>
+    <text x="400" y="80" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3" text-anchor="middle" opacity="0.4">12 findings  ·  12 KQL detections  ·  8 telemetry gaps  ·  73 blocks = SSH, not C2</text>
 
     <!-- Blinking cursor after stats -->
-    <rect x="588" y="72" width="1" height="9" fill="#A855F7">
+    <rect x="609" y="72" width="1" height="9" fill="#A855F7">
       <animate attributeName="opacity" values="0;0.6;0" dur="1.2s" repeatCount="indefinite"/>
     </rect>
 
@@ -221,12 +221,12 @@
       <text x="650" y="78" font-family="'Courier New', monospace" font-size="7" fill="#FF6B6B">rootbash →
         <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="4s"/>
       </text>
-      <text x="650" y="90" font-family="'Courier New', monospace" font-size="7" fill="#FF6B6B">C2 × 73
+      <text x="650" y="90" font-family="'Courier New', monospace" font-size="7" fill="#FF6B6B">health_check
         <animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite" begin="5s"/>
       </text>
     </g>
 
     <!-- Score badge -->
-    <text x="720" y="105" font-family="'Courier New', monospace" font-size="9" fill="#A855F7" opacity="0.2">100/100</text>
+    <text x="720" y="105" font-family="'Courier New', monospace" font-size="9" fill="#A855F7" opacity="0.2">99/100</text>
   </g>
 </svg>
