@@ -4,7 +4,7 @@ title: Meridian Investigation
 
 ![Animated banner for Hunt 25 Meridian, a web app intrusion on a patient portal, showing the attack chain from reconnaissance through LFI and SSH to root](assets/meridian-banner-animated.svg)
 
-**Jenna Frank (Hot Pink Huntress)** · [Portfolio](https://www.JennaFrank.co) · [Repository](https://github.com/jennafrank/meridian-investigation)
+**Jenna Frank (Hot Pink Huntress)**, Security Operations Manager · [Portfolio](https://www.JennaFrank.co) · [Repository](https://github.com/jennafrank/meridian-investigation)
 
 On 2026-02-06 an attacker broke into a healthcare patient portal running on a single Ubuntu server, and left a root backdoor running there. An automated defence stack was running on the same host and producing its own noise. I hunted the intrusion in Microsoft Sentinel with KQL across eight custom log tables, separated the attacker's activity from the defence stack's, and wrote 12 detection rules and an IR handover. Scored 99/100, first place.
 

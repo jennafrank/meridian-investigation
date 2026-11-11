@@ -89,3 +89,7 @@ All 12 are written in KQL in section 14 of the report, each with logic, false-po
 **Editable version:** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx)
 
 Executive summary, hypothesis and scope, 14 investigation pivots with queries and screenshots, a dead-ends table, UTC timeline, 12 findings with confidence levels, negative findings, ATT&CK coverage, 8 telemetry gaps, 12 detection rules, IR handover, next-hunt leads, and the full query appendix.
+
+## Author
+
+Jenna Frank (Hot Pink Huntress), Security Operations Manager. [linkedin.com/in/jenna-frank-cyber](https://www.linkedin.com/in/jenna-frank-cyber) · Portfolio: [JennaFrank.co](https://www.JennaFrank.co)
