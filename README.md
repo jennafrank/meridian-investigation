@@ -6,6 +6,16 @@
 
 **Hunt 25: Meridian Patient Portal Intrusion** — scored threat hunt, **99/100, 1st place**.
 
+**[Project site](https://jennafrank.github.io/meridian-investigation/)** · **[Read the full report online](https://jennafrank.github.io/meridian-investigation/report.html)** · **[Portfolio](https://www.JennaFrank.co)**
+
+## What this demonstrates
+
+- Hypothesis-driven hunting with stated counter-hypotheses, each tested and closed
+- Separating real attacker activity from the noise of an automated defence tool on the same host
+- Reconstructing a full Linux intrusion (web LFI, credential theft, SSH, SUID escalation, persistence) from logs alone
+- Keeping observed and inferred apart: confidence levels on every finding, and an uncorroborated export flagged rather than assumed
+- Detection engineering: 12 KQL rules mapped to MITRE ATT&CK
+
 ## Key findings
 
 - **The "exfil" was not C2.** All 73 "blocked exfil" events were the attacker's own SSH session: the IP and port match across three tables, and the gaps between blocks follow TCP retransmission backoff, not a beacon timer.
@@ -61,9 +71,20 @@ All 12 are written in KQL in section 14 of the report, each with logic, false-po
 - **PEAK** and **TaHiTI** — threat hunting methodology
 - **ABLE** — hypothesis scoping (Actor, Behaviour, Location, Evidence)
 
+## Repository structure
+
+| Path | Contents |
+|---|---|
+| `docs/` | GitHub Pages site: [`index.md`](docs/index.md), the [Markdown edition of the report](docs/report.md) and its figures in `docs/assets/report/` |
+| `Hunt_25_Meridian_Threat_Hunt_Report_v1.5.pdf` | The formatted report (49 pages, TLP:CLEAR) |
+| `Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx` | Editable source of the report |
+| `meridian-banner-animated.svg` | README banner |
+
 ## What's in the report
 
 **Full report (PDF):** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.pdf](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.pdf) (49 pages, TLP:CLEAR)
+
+**Markdown edition (readable on GitHub and the project site):** [docs/report.md](docs/report.md)
 
 **Editable version:** [Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx](Hunt_25_Meridian_Threat_Hunt_Report_v1.5.docx)
 
